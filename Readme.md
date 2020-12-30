@@ -1,5 +1,5 @@
 
-|--------------------------------------------|
+
 
 
 We hope you find value in the contents of this domo walkthrough. The contents
