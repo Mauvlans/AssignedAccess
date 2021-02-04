@@ -1,5 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration 
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    >
   <Profiles>
     <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
       <AllAppsList>
@@ -16,7 +20,7 @@
           <App DesktopAppPath="%SystemRoot%\system32\dnsmgmt.msc" />
           <App DesktopAppPath="%windir%\system32\fsrm.msc" />
           <App DesktopAppPath="%SystemRoot%\system32\gpmc.msc" />
-          <App DesktopAppPath="%SystemRoot%\system32\mmc.msc" />
+          <App DesktopAppPath="%SystemRoot%\system32\mmc.exe" />
           <App DesktopAppPath="%windir%\system32\RAMgmtUI.exe" />
           <App DesktopAppPath="%windir%\system32\rrasmgmt.msc" />
           <App DesktopAppPath="%SystemRoot%\system32\ServerManager.exe" />
@@ -26,6 +30,9 @@
           <App DesktopAppPath="%windir%\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe" />
         </AllowedApps>
       </AllAppsList>
+      <v2:FileExplorerNamespaceRestrictions>
+        <v3:NoRestriction />
+      </v2:FileExplorerNamespaceRestrictions>
       <StartLayout>
         <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions 
@@ -75,9 +82,6 @@
     </Profile>
   </Profiles>
   <Configs>
-    <Config>
-      <UserGroup Type="ActiveDirectoryGroup" Name="Mauvlan\Kiosk_User" />
-      <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
-    </Config>
+    <v3:GlobalProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
   </Configs>
 </AssignedAccessConfiguration>
