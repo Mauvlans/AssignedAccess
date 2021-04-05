@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration 
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    >
+  <Profiles>
+    <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
+      <AllAppsList>
+        <AllowedApps>
+          <App AppUserModelId="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
+          <App DesktopAppPath="%windir%\system32\dsac.exe" />
+          <App DesktopAppPath="%SystemRoot%\system32\domain.msc" />
+          <App DesktopAppPath="%windir%\system32\WindowsPowerShell\v1.0\powershell.exe" />
+          <App DesktopAppPath="%SystemRoot%\system32\dssite.msc" />
+          <App DesktopAppPath="%SystemRoot%\system32\dsa.msc" />
+          <App DesktopAppPath="%SystemRoot%\system32\adsiedit.msc" />
+          <App DesktopAppPath="%windir%\system32\dfsmgmt.msc" />
+          <App DesktopAppPath="%windir%\system32\dhcpmgmt.msc" />
+          <App DesktopAppPath="%SystemRoot%\system32\dnsmgmt.msc" />
+          <App DesktopAppPath="%windir%\system32\fsrm.msc" />
+          <App DesktopAppPath="%SystemRoot%\system32\gpmc.msc" />
+          <App DesktopAppPath="%SystemRoot%\system32\mmc.exe" />
+          <App DesktopAppPath="%windir%\system32\RAMgmtUI.exe" />
+          <App DesktopAppPath="%windir%\system32\rrasmgmt.msc" />
+          <App DesktopAppPath="%SystemRoot%\system32\ServerManager.exe" />
+          <App DesktopAppPath="%ProgramFiles%\Update Services\AdministrationSnapin\wsus.msc" />
+          <App DesktopAppPath="C:\Program Files (x86)\Microsoft Endpoint Manager\AdminConsole\bin\Microsoft.ConfigurationManagement.exe" />
+          <App DesktopAppPath="C:\Program Files (x86)\Microsoft Endpoint Manager\AdminConsole\bin\i386\CmRcViewer.exe" />
+          <App DesktopAppPath="%windir%\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe" />
+        </AllowedApps>
+      </AllAppsList>
+      <v2:FileExplorerNamespaceRestrictions>
+        <v3:NoRestriction />
+      </v2:FileExplorerNamespaceRestrictions>
+      <StartLayout>
+        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                      <LayoutOptions 
+                      StartTileGroupCellWidth="6"
+                      StartTileGroupsColumnCount="2" 
+                      />
+                      <DefaultLayoutOverride>
+                        <StartLayoutCollection>
+                          <defaultlayout:StartLayout GroupCellWidth="6">
+                                    <start:Group Name="Directory Services">
+                                      <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools\Active Directory Domains and Trusts.lnk" />
+                                      <start:DesktopApplicationTile Size="2x2" Column="2" Row="2" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools\Active Directory Users and Computers.lnk" />
+                                      <start:DesktopApplicationTile Size="2x2" Column="4" Row="2" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools\ADSIEdit.lnk" />
+                                      <start:DesktopApplicationTile Size="2x2" Column="0" Row="2" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools\Active Directory Sites and Services.lnk" />
+                                      <start:DesktopApplicationTile Size="2x2" Column="4" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools\Active Directory PowerShell Snap-In.lnk" />
+                                      <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools\Active Directory Administrative Center.lnk" />
+                                    </start:Group>
+                                    <start:Group Name="Remote Desktop Services">
+                                      <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools\Remote Desktop Services\RD Licensing Manager.lnk" />
+                                      <start:DesktopApplicationTile Size="2x2" Column="4" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools\Remote Desktop Services\Remote Desktop Licensing Diagnosis.lnk" />
+                                      <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools\Remote Desktop Services\RD Gateway Manager.lnk" />
+                                    </start:Group>
+                                    <start:Group Name="Endpoint Manager">
+                                      <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Microsoft Endpoint Manager\Configuration Manager\Configuration Manager Console.lnk" />
+                                      <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Microsoft Endpoint Manager\Configuration Manager\Remote Control Viewer.lnk" />
+                                      <start:DesktopApplicationTile Size="2x2" Column="4" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools\Windows Server Update Services.lnk" />
+                                    </start:Group>
+                                    <start:Group Name="Infra Services">
+                                      <start:DesktopApplicationTile Size="2x2" Column="4" Row="2" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools\DFS Management.lnk" />
+                                      <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools\dhcp.lnk" />
+                                      <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools\DNS.LNK" />
+                                      <start:DesktopApplicationTile Size="2x2" Column="4" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools\Group Policy Management.lnk" />
+                                      <start:DesktopApplicationTile Size="2x2" Column="0" Row="2" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools\File Server Resource Manager.lnk" />
+                                      <start:DesktopApplicationTile Size="2x2" Column="2" Row="2" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools\Routing and Remote Access.lnk" />
+                                    </start:Group>
+                                    <start:Group Name="Powershell">
+                                      <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Windows PowerShell\Windows PowerShell.lnk" />
+                                      <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Windows PowerShell\Windows PowerShell ISE.lnk" />
+                                    </start:Group>
+                          </defaultlayout:StartLayout>
+                        </StartLayoutCollection>
+                      </DefaultLayoutOverride>
+                    </LayoutModificationTemplate>
+                ]]>
+      </StartLayout>
+      <Taskbar ShowTaskbar="true"/>
+    </Profile>
+  </Profiles>
+  <Configs>
+    <v3:GlobalProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+  </Configs>
+</AssignedAccessConfiguration>
