@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration 
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    >
+  <Profiles>
+    <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
+      <AllAppsList>
+        <AllowedApps>
+          <App AppUserModelId="microsoft.microsoftskydrive_8wekyb3d8bbwe!App" />
+          <App AppUserModelId="Microsoft.CompanyPortal_8wekyb3d8bbwe!App" />
+          <App AppUserModelId="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" />
+          <App DesktopAppPath="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" />
+          <App DesktopAppPath="C:\Program Files (x86)\VMware\VMware Horizon View Client\vmware-view.exe" />
+          <App DesktopAppPath="C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE" />
+          <App DesktopAppPath="C:\Users\%username%\AppData\Local\Microsoft\Teams\update.exe" />
+          <App DesktopAppPath="C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE" />
+          <App DesktopAppPath="C:\Program Files\Microsoft Office\root\Office16\POWERPNT.EXE" />
+          <App DesktopAppPath="C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE" />
+          <App DesktopAppPath="C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" />
+          <App DesktopAppPath="C:\program files (x86)\Adobe\Acrobat DC\Acrobat\Acrobat.exe" />
+          <App DesktopAppPath="C:\Users\%username%\AppData\Local\Microsoft\OneDrive\OneDrive.exe" />
+          <App DesktopAppPath="C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" />
+          <App DesktopAppPath="C:\Program Files\Remote Desktop\msrdc.exe" />
+          <App DesktopAppPath="C:\Program Files\Remote Desktop\msrdcw.exe" />
+        </AllowedApps>
+      </AllAppsList>
+      <v2:FileExplorerNamespaceRestrictions>
+        <v3:NoRestriction />
+      </v2:FileExplorerNamespaceRestrictions>
+      <StartLayout>
+        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                  <LayoutOptions StartTileGroupCellWidth="6" />
+                  <DefaultLayoutOverride>
+                    <StartLayoutCollection>
+                      <defaultlayout:StartLayout GroupCellWidth="6">
+                        <start:Group Name="">
+                          <start:DesktopApplicationTile Size="2x2" Column="0" Row="4" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\PowerPoint.lnk" />
+                          <start:DesktopApplicationTile Size="2x2" Column="4" Row="4" DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\File Explorer.lnk" />
+                          <start:DesktopApplicationTile Size="2x2" Column="4" Row="2" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Excel.lnk" />
+                          <start:DesktopApplicationTile Size="2x2" Column="0" Row="2" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Outlook.lnk" />
+                          <start:DesktopApplicationTile Size="2x2" Column="2" Row="2" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Word.lnk" />
+                          <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\VMware Horizon Client.lnk" />
+                          <start:DesktopApplicationTile Size="2x2" Column="0" Row="6" DesktopApplicationID="com.squirrel.Teams.Teams" />
+                          <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk" />
+                          <start:DesktopApplicationTile Size="2x2" Column="4" Row="0" DesktopApplicationID="{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" />
+                          <start:DesktopApplicationTile Size="2x2" Column="2" Row="6" DesktopApplicationID="{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}\Adobe\Acrobat DC\Acrobat\Acrobat.exe" />
+                          <start:DesktopApplicationTile Size="2x2" Column="2" Row="4" DesktopApplicationID="Microsoft.RemoteDesktop.WPF" />
+                        </start:Group>
+                        <start:Group Name="">
+                          <start:Tile Size="2x2" Column="2" Row="0" AppUserModelID="Microsoft.CompanyPortal_8wekyb3d8bbwe!App" />
+                          <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" />
+                        </start:Group>
+                      </defaultlayout:StartLayout>
+                    </StartLayoutCollection>
+                  </DefaultLayoutOverride>
+                </LayoutModificationTemplate>
+                ]]>
+      </StartLayout>
+      <Taskbar ShowTaskbar="true"/>
+    </Profile>
+  </Profiles>
+  <Configs>
+      <v3:GlobalProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+  </Configs>
+</AssignedAccessConfiguration>
